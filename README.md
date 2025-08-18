@@ -1,5 +1,5 @@
 # BMKessels-Festival-Scheduler
-A script to allocate artists to stages following an input file that lists fixed timeslots for a multitude of artists.
+A Matlab script to allocate artists to stages following an input file that lists fixed timeslots for a multitude of artists.
 
 The script "FestivalScheduler_BMKessels.m" will allocate stages to artists 
 for a festival, according to a list (.txt input file, of which the name is 
