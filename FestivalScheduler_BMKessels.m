@@ -17,7 +17,7 @@ clc
 
 %% USER INPUTS:
 TurnoverTime = 2;  % optional (make 0 to toggle off): hours required for turnover (should be integer value!)
-PlanningType = "DenseMainStage";  % Choose the Planning type: "Random" (randomly select available stages), "DenseMainStage" (Prefer a dense main stage in which a relatively large number of acts are planned)
+PlanningType = "Random";  % Choose the Planning type: "Random" (randomly select available stages), "DenseMainStage" (Prefer a dense main stage in which a relatively large number of acts are planned)
 FigPos = [100, 100, 1000, 400];  % define figure position for all figures
 InputFile = "ShowList";  % input name of .txt file with show list
 OutputFile = InputFile + "_withStages";  % define name of output file in which the stages are added to the list with artists and strarting/ending times
@@ -122,7 +122,7 @@ for aa = 1:n_artists
     [stageOfArtist, ~] = find(StageBooking==aa);  % find stage of artist 
     fprintf(file_out, 'Artist: %d, Stage:%d, Timeslot: %d-%d\n', aa, stageOfArtist(1), ShowTimes(aa, 1), ShowTimes(aa, 2));  % print information to output file
 end
-fclose(sprintf("%s.txt", OutputFile));
+fclose(file_out);
 
 
 %% %%%% FUNCTIONS: %%%% %%
