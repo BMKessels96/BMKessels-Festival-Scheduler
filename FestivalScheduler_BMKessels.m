@@ -8,7 +8,7 @@
 % table. Also, a .txt file is created that lists each artist with their
 % stage, and timeslot. 
 
-% Code created by B.M. Kessels, 18-8-2026
+% Code created in Matlab R2024a by B.M. Kessels, 18-8-2026
 
 clear
 close all
