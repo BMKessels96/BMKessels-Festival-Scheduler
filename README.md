@@ -1,4 +1,8 @@
-This script will allocate stages to artists for a festival, according to a 
+This script is my submission to the Demcon coding challenge: 'Festival 
+schedule generator' 
+https://careersatdemcon.com/decode-demcon/challenge-festival-schedule-generator
+
+The script will allocate stages to artists for a festival, according to a 
 list (input file) with fixed timeslots for each artist. This script gives 
 the possibility to take turnover times (required on festivals to prepare 
 the stage for a new artist, soundcheck, etc.) into account. Also, it 
